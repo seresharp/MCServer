@@ -1,0 +1,3043 @@
+{
+  "block": [
+    {
+      "name": "acacia_logs",
+      "values": [
+        "acacia_log",
+        "acacia_wood",
+        "stripped_acacia_log",
+        "stripped_acacia_wood"
+      ]
+    },
+    {
+      "name": "animals_spawnable_on",
+      "values": [
+        "grass_block"
+      ]
+    },
+    {
+      "name": "anvil",
+      "values": [
+        "anvil",
+        "chipped_anvil",
+        "damaged_anvil"
+      ]
+    },
+    {
+      "name": "axolotls_spawnable_on",
+      "values": [
+        "clay"
+      ]
+    },
+    {
+      "name": "azalea_grows_on",
+      "values": [
+        "#minecraft:dirt",
+        "#minecraft:sand",
+        "#minecraft:terracotta",
+        "snow_block",
+        "powder_snow"
+      ]
+    },
+    {
+      "name": "azalea_root_replaceable",
+      "values": [
+        "#minecraft:lush_ground_replaceable",
+        "#minecraft:terracotta",
+        "red_sand"
+      ]
+    },
+    {
+      "name": "bamboo_plantable_on",
+      "values": [
+        "#minecraft:sand",
+        "#minecraft:dirt",
+        "bamboo",
+        "bamboo_sapling",
+        "gravel"
+      ]
+    },
+    {
+      "name": "banners",
+      "values": [
+        "white_banner",
+        "orange_banner",
+        "magenta_banner",
+        "light_blue_banner",
+        "yellow_banner",
+        "lime_banner",
+        "pink_banner",
+        "gray_banner",
+        "light_gray_banner",
+        "cyan_banner",
+        "purple_banner",
+        "blue_banner",
+        "brown_banner",
+        "green_banner",
+        "red_banner",
+        "black_banner",
+        "white_wall_banner",
+        "orange_wall_banner",
+        "magenta_wall_banner",
+        "light_blue_wall_banner",
+        "yellow_wall_banner",
+        "lime_wall_banner",
+        "pink_wall_banner",
+        "gray_wall_banner",
+        "light_gray_wall_banner",
+        "cyan_wall_banner",
+        "purple_wall_banner",
+        "blue_wall_banner",
+        "brown_wall_banner",
+        "green_wall_banner",
+        "red_wall_banner",
+        "black_wall_banner"
+      ]
+    },
+    {
+      "name": "base_stone_nether",
+      "values": [
+        "netherrack",
+        "basalt",
+        "blackstone"
+      ]
+    },
+    {
+      "name": "base_stone_overworld",
+      "values": [
+        "stone",
+        "granite",
+        "diorite",
+        "andesite",
+        "tuff",
+        "deepslate"
+      ]
+    },
+    {
+      "name": "beacon_base_blocks",
+      "values": [
+        "netherite_block",
+        "emerald_block",
+        "diamond_block",
+        "gold_block",
+        "iron_block"
+      ]
+    },
+    {
+      "name": "beds",
+      "values": [
+        "red_bed",
+        "black_bed",
+        "blue_bed",
+        "brown_bed",
+        "cyan_bed",
+        "gray_bed",
+        "green_bed",
+        "light_blue_bed",
+        "light_gray_bed",
+        "lime_bed",
+        "magenta_bed",
+        "orange_bed",
+        "pink_bed",
+        "purple_bed",
+        "white_bed",
+        "yellow_bed"
+      ]
+    },
+    {
+      "name": "bee_growables",
+      "values": [
+        "#minecraft:crops",
+        "sweet_berry_bush",
+        "cave_vines",
+        "cave_vines_plant"
+      ]
+    },
+    {
+      "name": "beehives",
+      "values": [
+        "bee_nest",
+        "beehive"
+      ]
+    },
+    {
+      "name": "big_dripleaf_placeable",
+      "values": [
+        "#minecraft:small_dripleaf_placeable",
+        "#minecraft:dirt",
+        "farmland"
+      ]
+    },
+    {
+      "name": "birch_logs",
+      "values": [
+        "birch_log",
+        "birch_wood",
+        "stripped_birch_log",
+        "stripped_birch_wood"
+      ]
+    },
+    {
+      "name": "buttons",
+      "values": [
+        "#minecraft:wooden_buttons",
+        "stone_button",
+        "polished_blackstone_button"
+      ]
+    },
+    {
+      "name": "campfires",
+      "values": [
+        "campfire",
+        "soul_campfire"
+      ]
+    },
+    {
+      "name": "candle_cakes",
+      "values": [
+        "candle_cake",
+        "white_candle_cake",
+        "orange_candle_cake",
+        "magenta_candle_cake",
+        "light_blue_candle_cake",
+        "yellow_candle_cake",
+        "lime_candle_cake",
+        "pink_candle_cake",
+        "gray_candle_cake",
+        "light_gray_candle_cake",
+        "cyan_candle_cake",
+        "purple_candle_cake",
+        "blue_candle_cake",
+        "brown_candle_cake",
+        "green_candle_cake",
+        "red_candle_cake",
+        "black_candle_cake"
+      ]
+    },
+    {
+      "name": "candles",
+      "values": [
+        "candle",
+        "white_candle",
+        "orange_candle",
+        "magenta_candle",
+        "light_blue_candle",
+        "yellow_candle",
+        "lime_candle",
+        "pink_candle",
+        "gray_candle",
+        "light_gray_candle",
+        "cyan_candle",
+        "purple_candle",
+        "blue_candle",
+        "brown_candle",
+        "green_candle",
+        "red_candle",
+        "black_candle"
+      ]
+    },
+    {
+      "name": "carpets",
+      "values": [
+        "white_carpet",
+        "orange_carpet",
+        "magenta_carpet",
+        "light_blue_carpet",
+        "yellow_carpet",
+        "lime_carpet",
+        "pink_carpet",
+        "gray_carpet",
+        "light_gray_carpet",
+        "cyan_carpet",
+        "purple_carpet",
+        "blue_carpet",
+        "brown_carpet",
+        "green_carpet",
+        "red_carpet",
+        "black_carpet"
+      ]
+    },
+    {
+      "name": "cauldrons",
+      "values": [
+        "cauldron",
+        "water_cauldron",
+        "lava_cauldron",
+        "powder_snow_cauldron"
+      ]
+    },
+    {
+      "name": "cave_vines",
+      "values": [
+        "cave_vines_plant",
+        "cave_vines"
+      ]
+    },
+    {
+      "name": "climbable",
+      "values": [
+        "ladder",
+        "vine",
+        "scaffolding",
+        "weeping_vines",
+        "weeping_vines_plant",
+        "twisting_vines",
+        "twisting_vines_plant",
+        "cave_vines",
+        "cave_vines_plant"
+      ]
+    },
+    {
+      "name": "coal_ores",
+      "values": [
+        "coal_ore",
+        "deepslate_coal_ore"
+      ]
+    },
+    {
+      "name": "copper_ores",
+      "values": [
+        "copper_ore",
+        "deepslate_copper_ore"
+      ]
+    },
+    {
+      "name": "coral_blocks",
+      "values": [
+        "tube_coral_block",
+        "brain_coral_block",
+        "bubble_coral_block",
+        "fire_coral_block",
+        "horn_coral_block"
+      ]
+    },
+    {
+      "name": "coral_plants",
+      "values": [
+        "tube_coral",
+        "brain_coral",
+        "bubble_coral",
+        "fire_coral",
+        "horn_coral"
+      ]
+    },
+    {
+      "name": "corals",
+      "values": [
+        "#minecraft:coral_plants",
+        "tube_coral_fan",
+        "brain_coral_fan",
+        "bubble_coral_fan",
+        "fire_coral_fan",
+        "horn_coral_fan"
+      ]
+    },
+    {
+      "name": "crimson_stems",
+      "values": [
+        "crimson_stem",
+        "stripped_crimson_stem",
+        "crimson_hyphae",
+        "stripped_crimson_hyphae"
+      ]
+    },
+    {
+      "name": "crops",
+      "values": [
+        "beetroots",
+        "carrots",
+        "potatoes",
+        "wheat",
+        "melon_stem",
+        "pumpkin_stem"
+      ]
+    },
+    {
+      "name": "crystal_sound_blocks",
+      "values": [
+        "amethyst_block",
+        "budding_amethyst"
+      ]
+    },
+    {
+      "name": "dark_oak_logs",
+      "values": [
+        "dark_oak_log",
+        "dark_oak_wood",
+        "stripped_dark_oak_log",
+        "stripped_dark_oak_wood"
+      ]
+    },
+    {
+      "name": "deepslate_ore_replaceables",
+      "values": [
+        "deepslate",
+        "tuff"
+      ]
+    },
+    {
+      "name": "diamond_ores",
+      "values": [
+        "diamond_ore",
+        "deepslate_diamond_ore"
+      ]
+    },
+    {
+      "name": "dirt",
+      "values": [
+        "dirt",
+        "grass_block",
+        "podzol",
+        "coarse_dirt",
+        "mycelium",
+        "rooted_dirt",
+        "moss_block"
+      ]
+    },
+    {
+      "name": "doors",
+      "values": [
+        "#minecraft:wooden_doors",
+        "iron_door"
+      ]
+    },
+    {
+      "name": "dragon_immune",
+      "values": [
+        "barrier",
+        "bedrock",
+        "end_portal",
+        "end_portal_frame",
+        "end_gateway",
+        "command_block",
+        "repeating_command_block",
+        "chain_command_block",
+        "structure_block",
+        "jigsaw",
+        "moving_piston",
+        "obsidian",
+        "crying_obsidian",
+        "end_stone",
+        "iron_bars",
+        "respawn_anchor"
+      ]
+    },
+    {
+      "name": "dripstone_replaceable_blocks",
+      "values": [
+        "#minecraft:base_stone_overworld",
+        "dirt"
+      ]
+    },
+    {
+      "name": "emerald_ores",
+      "values": [
+        "emerald_ore",
+        "deepslate_emerald_ore"
+      ]
+    },
+    {
+      "name": "enderman_holdable",
+      "values": [
+        "#minecraft:small_flowers",
+        "#minecraft:dirt",
+        "sand",
+        "red_sand",
+        "gravel",
+        "brown_mushroom",
+        "red_mushroom",
+        "tnt",
+        "cactus",
+        "clay",
+        "pumpkin",
+        "carved_pumpkin",
+        "melon",
+        "crimson_fungus",
+        "crimson_nylium",
+        "crimson_roots",
+        "warped_fungus",
+        "warped_nylium",
+        "warped_roots"
+      ]
+    },
+    {
+      "name": "features_cannot_replace",
+      "values": [
+        "bedrock",
+        "spawner",
+        "chest",
+        "end_portal_frame"
+      ]
+    },
+    {
+      "name": "fence_gates",
+      "values": [
+        "acacia_fence_gate",
+        "birch_fence_gate",
+        "dark_oak_fence_gate",
+        "jungle_fence_gate",
+        "oak_fence_gate",
+        "spruce_fence_gate",
+        "crimson_fence_gate",
+        "warped_fence_gate"
+      ]
+    },
+    {
+      "name": "fences",
+      "values": [
+        "#minecraft:wooden_fences",
+        "nether_brick_fence"
+      ]
+    },
+    {
+      "name": "fire",
+      "values": [
+        "fire",
+        "soul_fire"
+      ]
+    },
+    {
+      "name": "flower_pots",
+      "values": [
+        "flower_pot",
+        "potted_poppy",
+        "potted_blue_orchid",
+        "potted_allium",
+        "potted_azure_bluet",
+        "potted_red_tulip",
+        "potted_orange_tulip",
+        "potted_white_tulip",
+        "potted_pink_tulip",
+        "potted_oxeye_daisy",
+        "potted_dandelion",
+        "potted_oak_sapling",
+        "potted_spruce_sapling",
+        "potted_birch_sapling",
+        "potted_jungle_sapling",
+        "potted_acacia_sapling",
+        "potted_dark_oak_sapling",
+        "potted_red_mushroom",
+        "potted_brown_mushroom",
+        "potted_dead_bush",
+        "potted_fern",
+        "potted_cactus",
+        "potted_cornflower",
+        "potted_lily_of_the_valley",
+        "potted_wither_rose",
+        "potted_bamboo",
+        "potted_crimson_fungus",
+        "potted_warped_fungus",
+        "potted_crimson_roots",
+        "potted_warped_roots",
+        "potted_azalea_bush",
+        "potted_flowering_azalea_bush"
+      ]
+    },
+    {
+      "name": "flowers",
+      "values": [
+        "#minecraft:small_flowers",
+        "#minecraft:tall_flowers",
+        "flowering_azalea_leaves",
+        "flowering_azalea"
+      ]
+    },
+    {
+      "name": "foxes_spawnable_on",
+      "values": [
+        "grass_block",
+        "snow",
+        "snow_block",
+        "podzol",
+        "coarse_dirt"
+      ]
+    },
+    {
+      "name": "geode_invalid_blocks",
+      "values": [
+        "bedrock",
+        "water",
+        "lava",
+        "ice",
+        "packed_ice",
+        "blue_ice"
+      ]
+    },
+    {
+      "name": "goats_spawnable_on",
+      "values": [
+        "stone",
+        "snow",
+        "powder_snow",
+        "snow_block",
+        "packed_ice",
+        "gravel"
+      ]
+    },
+    {
+      "name": "gold_ores",
+      "values": [
+        "gold_ore",
+        "nether_gold_ore",
+        "deepslate_gold_ore"
+      ]
+    },
+    {
+      "name": "guarded_by_piglins",
+      "values": [
+        "gold_block",
+        "barrel",
+        "chest",
+        "ender_chest",
+        "gilded_blackstone",
+        "trapped_chest",
+        "raw_gold_block",
+        "#minecraft:shulker_boxes",
+        "#minecraft:gold_ores"
+      ]
+    },
+    {
+      "name": "hoglin_repellents",
+      "values": [
+        "warped_fungus",
+        "potted_warped_fungus",
+        "nether_portal",
+        "respawn_anchor"
+      ]
+    },
+    {
+      "name": "ice",
+      "values": [
+        "ice",
+        "packed_ice",
+        "blue_ice",
+        "frosted_ice"
+      ]
+    },
+    {
+      "name": "impermeable",
+      "values": [
+        "glass",
+        "white_stained_glass",
+        "orange_stained_glass",
+        "magenta_stained_glass",
+        "light_blue_stained_glass",
+        "yellow_stained_glass",
+        "lime_stained_glass",
+        "pink_stained_glass",
+        "gray_stained_glass",
+        "light_gray_stained_glass",
+        "cyan_stained_glass",
+        "purple_stained_glass",
+        "blue_stained_glass",
+        "brown_stained_glass",
+        "green_stained_glass",
+        "red_stained_glass",
+        "black_stained_glass",
+        "tinted_glass"
+      ]
+    },
+    {
+      "name": "infiniburn_end",
+      "values": [
+        "#minecraft:infiniburn_overworld",
+        "bedrock"
+      ]
+    },
+    {
+      "name": "infiniburn_nether",
+      "values": [
+        "#minecraft:infiniburn_overworld"
+      ]
+    },
+    {
+      "name": "infiniburn_overworld",
+      "values": [
+        "netherrack",
+        "magma_block"
+      ]
+    },
+    {
+      "name": "inside_step_sound_blocks",
+      "values": [
+        "snow",
+        "powder_snow"
+      ]
+    },
+    {
+      "name": "iron_ores",
+      "values": [
+        "iron_ore",
+        "deepslate_iron_ore"
+      ]
+    },
+    {
+      "name": "jungle_logs",
+      "values": [
+        "jungle_log",
+        "jungle_wood",
+        "stripped_jungle_log",
+        "stripped_jungle_wood"
+      ]
+    },
+    {
+      "name": "lapis_ores",
+      "values": [
+        "lapis_ore",
+        "deepslate_lapis_ore"
+      ]
+    },
+    {
+      "name": "lava_pool_stone_cannot_replace",
+      "values": [
+        "#minecraft:features_cannot_replace",
+        "#minecraft:leaves",
+        "#minecraft:logs"
+      ]
+    },
+    {
+      "name": "leaves",
+      "values": [
+        "jungle_leaves",
+        "oak_leaves",
+        "spruce_leaves",
+        "dark_oak_leaves",
+        "acacia_leaves",
+        "birch_leaves",
+        "azalea_leaves",
+        "flowering_azalea_leaves"
+      ]
+    },
+    {
+      "name": "logs",
+      "values": [
+        "#minecraft:logs_that_burn",
+        "#minecraft:crimson_stems",
+        "#minecraft:warped_stems"
+      ]
+    },
+    {
+      "name": "logs_that_burn",
+      "values": [
+        "#minecraft:dark_oak_logs",
+        "#minecraft:oak_logs",
+        "#minecraft:acacia_logs",
+        "#minecraft:birch_logs",
+        "#minecraft:jungle_logs",
+        "#minecraft:spruce_logs"
+      ]
+    },
+    {
+      "name": "lush_ground_replaceable",
+      "values": [
+        "#minecraft:moss_replaceable",
+        "clay",
+        "gravel",
+        "sand"
+      ]
+    },
+    {
+      "name": "mineable/axe",
+      "values": [
+        "note_block",
+        "attached_melon_stem",
+        "attached_pumpkin_stem",
+        "azalea",
+        "bamboo",
+        "barrel",
+        "bee_nest",
+        "beehive",
+        "beetroots",
+        "big_dripleaf_stem",
+        "big_dripleaf",
+        "bookshelf",
+        "brown_mushroom_block",
+        "brown_mushroom",
+        "campfire",
+        "carrots",
+        "cartography_table",
+        "carved_pumpkin",
+        "cave_vines_plant",
+        "cave_vines",
+        "chest",
+        "chorus_flower",
+        "chorus_plant",
+        "cocoa",
+        "composter",
+        "crafting_table",
+        "crimson_fungus",
+        "daylight_detector",
+        "dead_bush",
+        "fern",
+        "fletching_table",
+        "glow_lichen",
+        "grass",
+        "hanging_roots",
+        "jack_o_lantern",
+        "jukebox",
+        "ladder",
+        "large_fern",
+        "lectern",
+        "lily_pad",
+        "loom",
+        "melon_stem",
+        "melon",
+        "mushroom_stem",
+        "nether_wart",
+        "potatoes",
+        "pumpkin_stem",
+        "pumpkin",
+        "red_mushroom_block",
+        "red_mushroom",
+        "scaffolding",
+        "small_dripleaf",
+        "smithing_table",
+        "soul_campfire",
+        "spore_blossom",
+        "sugar_cane",
+        "sweet_berry_bush",
+        "tall_grass",
+        "trapped_chest",
+        "twisting_vines_plant",
+        "twisting_vines",
+        "vine",
+        "warped_fungus",
+        "weeping_vines_plant",
+        "weeping_vines",
+        "wheat",
+        "#minecraft:banners",
+        "#minecraft:fence_gates",
+        "#minecraft:logs",
+        "#minecraft:planks",
+        "#minecraft:saplings",
+        "#minecraft:signs",
+        "#minecraft:wooden_buttons",
+        "#minecraft:wooden_doors",
+        "#minecraft:wooden_fences",
+        "#minecraft:wooden_pressure_plates",
+        "#minecraft:wooden_slabs",
+        "#minecraft:wooden_stairs",
+        "#minecraft:wooden_trapdoors"
+      ]
+    },
+    {
+      "name": "mineable/hoe",
+      "values": [
+        "nether_wart_block",
+        "warped_wart_block",
+        "hay_block",
+        "dried_kelp_block",
+        "target",
+        "shroomlight",
+        "sponge",
+        "wet_sponge",
+        "jungle_leaves",
+        "oak_leaves",
+        "spruce_leaves",
+        "dark_oak_leaves",
+        "acacia_leaves",
+        "birch_leaves",
+        "azalea_leaves",
+        "flowering_azalea_leaves",
+        "sculk_sensor",
+        "moss_block",
+        "moss_carpet"
+      ]
+    },
+    {
+      "name": "mineable/pickaxe",
+      "values": [
+        "stone",
+        "granite",
+        "polished_granite",
+        "diorite",
+        "polished_diorite",
+        "andesite",
+        "polished_andesite",
+        "cobblestone",
+        "gold_ore",
+        "deepslate_gold_ore",
+        "iron_ore",
+        "deepslate_iron_ore",
+        "coal_ore",
+        "deepslate_coal_ore",
+        "nether_gold_ore",
+        "lapis_ore",
+        "deepslate_lapis_ore",
+        "lapis_block",
+        "dispenser",
+        "sandstone",
+        "chiseled_sandstone",
+        "cut_sandstone",
+        "gold_block",
+        "iron_block",
+        "bricks",
+        "mossy_cobblestone",
+        "obsidian",
+        "spawner",
+        "diamond_ore",
+        "deepslate_diamond_ore",
+        "diamond_block",
+        "furnace",
+        "cobblestone_stairs",
+        "stone_pressure_plate",
+        "iron_door",
+        "redstone_ore",
+        "deepslate_redstone_ore",
+        "netherrack",
+        "basalt",
+        "polished_basalt",
+        "stone_bricks",
+        "mossy_stone_bricks",
+        "cracked_stone_bricks",
+        "chiseled_stone_bricks",
+        "iron_bars",
+        "chain",
+        "brick_stairs",
+        "stone_brick_stairs",
+        "nether_bricks",
+        "nether_brick_fence",
+        "nether_brick_stairs",
+        "enchanting_table",
+        "brewing_stand",
+        "end_stone",
+        "sandstone_stairs",
+        "emerald_ore",
+        "deepslate_emerald_ore",
+        "ender_chest",
+        "emerald_block",
+        "light_weighted_pressure_plate",
+        "heavy_weighted_pressure_plate",
+        "redstone_block",
+        "nether_quartz_ore",
+        "hopper",
+        "quartz_block",
+        "chiseled_quartz_block",
+        "quartz_pillar",
+        "quartz_stairs",
+        "dropper",
+        "white_terracotta",
+        "orange_terracotta",
+        "magenta_terracotta",
+        "light_blue_terracotta",
+        "yellow_terracotta",
+        "lime_terracotta",
+        "pink_terracotta",
+        "gray_terracotta",
+        "light_gray_terracotta",
+        "cyan_terracotta",
+        "purple_terracotta",
+        "blue_terracotta",
+        "brown_terracotta",
+        "green_terracotta",
+        "red_terracotta",
+        "black_terracotta",
+        "iron_trapdoor",
+        "prismarine",
+        "prismarine_bricks",
+        "dark_prismarine",
+        "prismarine_stairs",
+        "prismarine_brick_stairs",
+        "dark_prismarine_stairs",
+        "prismarine_slab",
+        "prismarine_brick_slab",
+        "dark_prismarine_slab",
+        "terracotta",
+        "coal_block",
+        "red_sandstone",
+        "chiseled_red_sandstone",
+        "cut_red_sandstone",
+        "red_sandstone_stairs",
+        "stone_slab",
+        "smooth_stone_slab",
+        "sandstone_slab",
+        "cut_sandstone_slab",
+        "petrified_oak_slab",
+        "cobblestone_slab",
+        "brick_slab",
+        "stone_brick_slab",
+        "nether_brick_slab",
+        "quartz_slab",
+        "red_sandstone_slab",
+        "cut_red_sandstone_slab",
+        "purpur_slab",
+        "smooth_stone",
+        "smooth_sandstone",
+        "smooth_quartz",
+        "smooth_red_sandstone",
+        "purpur_block",
+        "purpur_pillar",
+        "purpur_stairs",
+        "end_stone_bricks",
+        "magma_block",
+        "red_nether_bricks",
+        "bone_block",
+        "observer",
+        "white_glazed_terracotta",
+        "orange_glazed_terracotta",
+        "magenta_glazed_terracotta",
+        "light_blue_glazed_terracotta",
+        "yellow_glazed_terracotta",
+        "lime_glazed_terracotta",
+        "pink_glazed_terracotta",
+        "gray_glazed_terracotta",
+        "light_gray_glazed_terracotta",
+        "cyan_glazed_terracotta",
+        "purple_glazed_terracotta",
+        "blue_glazed_terracotta",
+        "brown_glazed_terracotta",
+        "green_glazed_terracotta",
+        "red_glazed_terracotta",
+        "black_glazed_terracotta",
+        "white_concrete",
+        "orange_concrete",
+        "magenta_concrete",
+        "light_blue_concrete",
+        "yellow_concrete",
+        "lime_concrete",
+        "pink_concrete",
+        "gray_concrete",
+        "light_gray_concrete",
+        "cyan_concrete",
+        "purple_concrete",
+        "blue_concrete",
+        "brown_concrete",
+        "green_concrete",
+        "red_concrete",
+        "black_concrete",
+        "dead_tube_coral_block",
+        "dead_brain_coral_block",
+        "dead_bubble_coral_block",
+        "dead_fire_coral_block",
+        "dead_horn_coral_block",
+        "tube_coral_block",
+        "brain_coral_block",
+        "bubble_coral_block",
+        "fire_coral_block",
+        "horn_coral_block",
+        "dead_tube_coral",
+        "dead_brain_coral",
+        "dead_bubble_coral",
+        "dead_fire_coral",
+        "dead_horn_coral",
+        "dead_tube_coral_fan",
+        "dead_brain_coral_fan",
+        "dead_bubble_coral_fan",
+        "dead_fire_coral_fan",
+        "dead_horn_coral_fan",
+        "dead_tube_coral_wall_fan",
+        "dead_brain_coral_wall_fan",
+        "dead_bubble_coral_wall_fan",
+        "dead_fire_coral_wall_fan",
+        "dead_horn_coral_wall_fan",
+        "polished_granite_stairs",
+        "smooth_red_sandstone_stairs",
+        "mossy_stone_brick_stairs",
+        "polished_diorite_stairs",
+        "mossy_cobblestone_stairs",
+        "end_stone_brick_stairs",
+        "stone_stairs",
+        "smooth_sandstone_stairs",
+        "smooth_quartz_stairs",
+        "granite_stairs",
+        "andesite_stairs",
+        "red_nether_brick_stairs",
+        "polished_andesite_stairs",
+        "diorite_stairs",
+        "polished_granite_slab",
+        "smooth_red_sandstone_slab",
+        "mossy_stone_brick_slab",
+        "polished_diorite_slab",
+        "mossy_cobblestone_slab",
+        "end_stone_brick_slab",
+        "smooth_sandstone_slab",
+        "smooth_quartz_slab",
+        "granite_slab",
+        "andesite_slab",
+        "red_nether_brick_slab",
+        "polished_andesite_slab",
+        "diorite_slab",
+        "smoker",
+        "blast_furnace",
+        "grindstone",
+        "stonecutter",
+        "bell",
+        "lantern",
+        "soul_lantern",
+        "warped_nylium",
+        "crimson_nylium",
+        "netherite_block",
+        "ancient_debris",
+        "crying_obsidian",
+        "respawn_anchor",
+        "lodestone",
+        "blackstone",
+        "blackstone_stairs",
+        "blackstone_slab",
+        "polished_blackstone",
+        "polished_blackstone_bricks",
+        "cracked_polished_blackstone_bricks",
+        "chiseled_polished_blackstone",
+        "polished_blackstone_brick_slab",
+        "polished_blackstone_brick_stairs",
+        "gilded_blackstone",
+        "polished_blackstone_stairs",
+        "polished_blackstone_slab",
+        "polished_blackstone_pressure_plate",
+        "chiseled_nether_bricks",
+        "cracked_nether_bricks",
+        "quartz_bricks",
+        "tuff",
+        "calcite",
+        "oxidized_copper",
+        "weathered_copper",
+        "exposed_copper",
+        "copper_block",
+        "copper_ore",
+        "deepslate_copper_ore",
+        "oxidized_cut_copper",
+        "weathered_cut_copper",
+        "exposed_cut_copper",
+        "cut_copper",
+        "oxidized_cut_copper_stairs",
+        "weathered_cut_copper_stairs",
+        "exposed_cut_copper_stairs",
+        "cut_copper_stairs",
+        "oxidized_cut_copper_slab",
+        "weathered_cut_copper_slab",
+        "exposed_cut_copper_slab",
+        "cut_copper_slab",
+        "waxed_copper_block",
+        "waxed_weathered_copper",
+        "waxed_exposed_copper",
+        "waxed_oxidized_copper",
+        "waxed_oxidized_cut_copper",
+        "waxed_weathered_cut_copper",
+        "waxed_exposed_cut_copper",
+        "waxed_cut_copper",
+        "waxed_oxidized_cut_copper_stairs",
+        "waxed_weathered_cut_copper_stairs",
+        "waxed_exposed_cut_copper_stairs",
+        "waxed_cut_copper_stairs",
+        "waxed_oxidized_cut_copper_slab",
+        "waxed_weathered_cut_copper_slab",
+        "waxed_exposed_cut_copper_slab",
+        "waxed_cut_copper_slab",
+        "lightning_rod",
+        "pointed_dripstone",
+        "dripstone_block",
+        "deepslate",
+        "cobbled_deepslate",
+        "cobbled_deepslate_stairs",
+        "cobbled_deepslate_slab",
+        "polished_deepslate",
+        "polished_deepslate_stairs",
+        "polished_deepslate_slab",
+        "deepslate_tiles",
+        "deepslate_tile_stairs",
+        "deepslate_tile_slab",
+        "deepslate_bricks",
+        "deepslate_brick_stairs",
+        "deepslate_brick_slab",
+        "chiseled_deepslate",
+        "cracked_deepslate_bricks",
+        "cracked_deepslate_tiles",
+        "smooth_basalt",
+        "raw_iron_block",
+        "raw_copper_block",
+        "raw_gold_block",
+        "ice",
+        "packed_ice",
+        "blue_ice",
+        "stone_button",
+        "piston",
+        "sticky_piston",
+        "piston_head",
+        "amethyst_cluster",
+        "small_amethyst_bud",
+        "medium_amethyst_bud",
+        "large_amethyst_bud",
+        "amethyst_block",
+        "budding_amethyst",
+        "infested_cobblestone",
+        "infested_chiseled_stone_bricks",
+        "infested_cracked_stone_bricks",
+        "infested_deepslate",
+        "infested_stone",
+        "infested_mossy_stone_bricks",
+        "infested_stone_bricks",
+        "#minecraft:walls",
+        "#minecraft:shulker_boxes",
+        "#minecraft:anvil",
+        "#minecraft:cauldrons",
+        "#minecraft:rails",
+        "conduit"
+      ]
+    },
+    {
+      "name": "mineable/shovel",
+      "values": [
+        "clay",
+        "dirt",
+        "coarse_dirt",
+        "podzol",
+        "farmland",
+        "grass_block",
+        "gravel",
+        "mycelium",
+        "sand",
+        "red_sand",
+        "snow_block",
+        "snow",
+        "soul_sand",
+        "dirt_path",
+        "white_concrete_powder",
+        "orange_concrete_powder",
+        "magenta_concrete_powder",
+        "light_blue_concrete_powder",
+        "yellow_concrete_powder",
+        "lime_concrete_powder",
+        "pink_concrete_powder",
+        "gray_concrete_powder",
+        "light_gray_concrete_powder",
+        "cyan_concrete_powder",
+        "purple_concrete_powder",
+        "blue_concrete_powder",
+        "brown_concrete_powder",
+        "green_concrete_powder",
+        "red_concrete_powder",
+        "black_concrete_powder",
+        "soul_soil",
+        "rooted_dirt"
+      ]
+    },
+    {
+      "name": "mooshrooms_spawnable_on",
+      "values": [
+        "mycelium"
+      ]
+    },
+    {
+      "name": "moss_replaceable",
+      "values": [
+        "#minecraft:base_stone_overworld",
+        "#minecraft:cave_vines",
+        "#minecraft:dirt"
+      ]
+    },
+    {
+      "name": "mushroom_grow_block",
+      "values": [
+        "mycelium",
+        "podzol",
+        "crimson_nylium",
+        "warped_nylium"
+      ]
+    },
+    {
+      "name": "needs_diamond_tool",
+      "values": [
+        "obsidian",
+        "crying_obsidian",
+        "netherite_block",
+        "respawn_anchor",
+        "ancient_debris"
+      ]
+    },
+    {
+      "name": "needs_iron_tool",
+      "values": [
+        "diamond_block",
+        "diamond_ore",
+        "deepslate_diamond_ore",
+        "emerald_ore",
+        "deepslate_emerald_ore",
+        "emerald_block",
+        "gold_block",
+        "raw_gold_block",
+        "gold_ore",
+        "deepslate_gold_ore",
+        "redstone_ore",
+        "deepslate_redstone_ore"
+      ]
+    },
+    {
+      "name": "needs_stone_tool",
+      "values": [
+        "iron_block",
+        "raw_iron_block",
+        "iron_ore",
+        "deepslate_iron_ore",
+        "lapis_block",
+        "lapis_ore",
+        "deepslate_lapis_ore",
+        "copper_block",
+        "raw_copper_block",
+        "copper_ore",
+        "deepslate_copper_ore",
+        "cut_copper_slab",
+        "cut_copper_stairs",
+        "cut_copper",
+        "weathered_copper",
+        "weathered_cut_copper_slab",
+        "weathered_cut_copper_stairs",
+        "weathered_cut_copper",
+        "oxidized_copper",
+        "oxidized_cut_copper_slab",
+        "oxidized_cut_copper_stairs",
+        "oxidized_cut_copper",
+        "exposed_copper",
+        "exposed_cut_copper_slab",
+        "exposed_cut_copper_stairs",
+        "exposed_cut_copper",
+        "waxed_copper_block",
+        "waxed_cut_copper_slab",
+        "waxed_cut_copper_stairs",
+        "waxed_cut_copper",
+        "waxed_weathered_copper",
+        "waxed_weathered_cut_copper_slab",
+        "waxed_weathered_cut_copper_stairs",
+        "waxed_weathered_cut_copper",
+        "waxed_exposed_copper",
+        "waxed_exposed_cut_copper_slab",
+        "waxed_exposed_cut_copper_stairs",
+        "waxed_exposed_cut_copper",
+        "waxed_oxidized_copper",
+        "waxed_oxidized_cut_copper_slab",
+        "waxed_oxidized_cut_copper_stairs",
+        "waxed_oxidized_cut_copper",
+        "lightning_rod"
+      ]
+    },
+    {
+      "name": "non_flammable_wood",
+      "values": [
+        "warped_stem",
+        "stripped_warped_stem",
+        "warped_hyphae",
+        "stripped_warped_hyphae",
+        "crimson_stem",
+        "stripped_crimson_stem",
+        "crimson_hyphae",
+        "stripped_crimson_hyphae",
+        "crimson_planks",
+        "warped_planks",
+        "crimson_slab",
+        "warped_slab",
+        "crimson_pressure_plate",
+        "warped_pressure_plate",
+        "crimson_fence",
+        "warped_fence",
+        "crimson_trapdoor",
+        "warped_trapdoor",
+        "crimson_fence_gate",
+        "warped_fence_gate",
+        "crimson_stairs",
+        "warped_stairs",
+        "crimson_button",
+        "warped_button",
+        "crimson_door",
+        "warped_door",
+        "crimson_sign",
+        "warped_sign",
+        "crimson_wall_sign",
+        "warped_wall_sign"
+      ]
+    },
+    {
+      "name": "nylium",
+      "values": [
+        "crimson_nylium",
+        "warped_nylium"
+      ]
+    },
+    {
+      "name": "oak_logs",
+      "values": [
+        "oak_log",
+        "oak_wood",
+        "stripped_oak_log",
+        "stripped_oak_wood"
+      ]
+    },
+    {
+      "name": "occludes_vibration_signals",
+      "values": [
+        "#minecraft:wool"
+      ]
+    },
+    {
+      "name": "parrots_spawnable_on",
+      "values": [
+        "grass_block",
+        "air",
+        "#minecraft:leaves",
+        "#minecraft:logs"
+      ]
+    },
+    {
+      "name": "piglin_repellents",
+      "values": [
+        "soul_fire",
+        "soul_torch",
+        "soul_lantern",
+        "soul_wall_torch",
+        "soul_campfire"
+      ]
+    },
+    {
+      "name": "planks",
+      "values": [
+        "oak_planks",
+        "spruce_planks",
+        "birch_planks",
+        "jungle_planks",
+        "acacia_planks",
+        "dark_oak_planks",
+        "crimson_planks",
+        "warped_planks"
+      ]
+    },
+    {
+      "name": "polar_bears_spawnable_on_in_frozen_ocean",
+      "values": [
+        "ice"
+      ]
+    },
+    {
+      "name": "portals",
+      "values": [
+        "nether_portal",
+        "end_portal",
+        "end_gateway"
+      ]
+    },
+    {
+      "name": "pressure_plates",
+      "values": [
+        "light_weighted_pressure_plate",
+        "heavy_weighted_pressure_plate",
+        "#minecraft:wooden_pressure_plates",
+        "#minecraft:stone_pressure_plates"
+      ]
+    },
+    {
+      "name": "prevent_mob_spawning_inside",
+      "values": [
+        "#minecraft:rails"
+      ]
+    },
+    {
+      "name": "rabbits_spawnable_on",
+      "values": [
+        "grass_block",
+        "snow",
+        "snow_block",
+        "sand"
+      ]
+    },
+    {
+      "name": "rails",
+      "values": [
+        "rail",
+        "powered_rail",
+        "detector_rail",
+        "activator_rail"
+      ]
+    },
+    {
+      "name": "redstone_ores",
+      "values": [
+        "redstone_ore",
+        "deepslate_redstone_ore"
+      ]
+    },
+    {
+      "name": "replaceable_plants",
+      "values": [
+        "grass",
+        "fern",
+        "dead_bush",
+        "vine",
+        "glow_lichen",
+        "sunflower",
+        "lilac",
+        "rose_bush",
+        "peony",
+        "tall_grass",
+        "large_fern",
+        "hanging_roots"
+      ]
+    },
+    {
+      "name": "sand",
+      "values": [
+        "sand",
+        "red_sand"
+      ]
+    },
+    {
+      "name": "saplings",
+      "values": [
+        "oak_sapling",
+        "spruce_sapling",
+        "birch_sapling",
+        "jungle_sapling",
+        "acacia_sapling",
+        "dark_oak_sapling",
+        "azalea",
+        "flowering_azalea"
+      ]
+    },
+    {
+      "name": "shulker_boxes",
+      "values": [
+        "shulker_box",
+        "black_shulker_box",
+        "blue_shulker_box",
+        "brown_shulker_box",
+        "cyan_shulker_box",
+        "gray_shulker_box",
+        "green_shulker_box",
+        "light_blue_shulker_box",
+        "light_gray_shulker_box",
+        "lime_shulker_box",
+        "magenta_shulker_box",
+        "orange_shulker_box",
+        "pink_shulker_box",
+        "purple_shulker_box",
+        "red_shulker_box",
+        "white_shulker_box",
+        "yellow_shulker_box"
+      ]
+    },
+    {
+      "name": "signs",
+      "values": [
+        "#minecraft:standing_signs",
+        "#minecraft:wall_signs"
+      ]
+    },
+    {
+      "name": "slabs",
+      "values": [
+        "#minecraft:wooden_slabs",
+        "stone_slab",
+        "smooth_stone_slab",
+        "stone_brick_slab",
+        "sandstone_slab",
+        "purpur_slab",
+        "quartz_slab",
+        "red_sandstone_slab",
+        "brick_slab",
+        "cobblestone_slab",
+        "nether_brick_slab",
+        "petrified_oak_slab",
+        "prismarine_slab",
+        "prismarine_brick_slab",
+        "dark_prismarine_slab",
+        "polished_granite_slab",
+        "smooth_red_sandstone_slab",
+        "mossy_stone_brick_slab",
+        "polished_diorite_slab",
+        "mossy_cobblestone_slab",
+        "end_stone_brick_slab",
+        "smooth_sandstone_slab",
+        "smooth_quartz_slab",
+        "granite_slab",
+        "andesite_slab",
+        "red_nether_brick_slab",
+        "polished_andesite_slab",
+        "diorite_slab",
+        "cut_sandstone_slab",
+        "cut_red_sandstone_slab",
+        "blackstone_slab",
+        "polished_blackstone_brick_slab",
+        "polished_blackstone_slab",
+        "cobbled_deepslate_slab",
+        "polished_deepslate_slab",
+        "deepslate_tile_slab",
+        "deepslate_brick_slab",
+        "waxed_weathered_cut_copper_slab",
+        "waxed_exposed_cut_copper_slab",
+        "waxed_cut_copper_slab",
+        "oxidized_cut_copper_slab",
+        "weathered_cut_copper_slab",
+        "exposed_cut_copper_slab",
+        "cut_copper_slab",
+        "waxed_oxidized_cut_copper_slab"
+      ]
+    },
+    {
+      "name": "small_dripleaf_placeable",
+      "values": [
+        "clay",
+        "moss_block"
+      ]
+    },
+    {
+      "name": "small_flowers",
+      "values": [
+        "dandelion",
+        "poppy",
+        "blue_orchid",
+        "allium",
+        "azure_bluet",
+        "red_tulip",
+        "orange_tulip",
+        "white_tulip",
+        "pink_tulip",
+        "oxeye_daisy",
+        "cornflower",
+        "lily_of_the_valley",
+        "wither_rose"
+      ]
+    },
+    {
+      "name": "snow",
+      "values": [
+        "snow",
+        "snow_block",
+        "powder_snow"
+      ]
+    },
+    {
+      "name": "soul_fire_base_blocks",
+      "values": [
+        "soul_sand",
+        "soul_soil"
+      ]
+    },
+    {
+      "name": "soul_speed_blocks",
+      "values": [
+        "soul_sand",
+        "soul_soil"
+      ]
+    },
+    {
+      "name": "spruce_logs",
+      "values": [
+        "spruce_log",
+        "spruce_wood",
+        "stripped_spruce_log",
+        "stripped_spruce_wood"
+      ]
+    },
+    {
+      "name": "stairs",
+      "values": [
+        "#minecraft:wooden_stairs",
+        "cobblestone_stairs",
+        "sandstone_stairs",
+        "nether_brick_stairs",
+        "stone_brick_stairs",
+        "brick_stairs",
+        "purpur_stairs",
+        "quartz_stairs",
+        "red_sandstone_stairs",
+        "prismarine_brick_stairs",
+        "prismarine_stairs",
+        "dark_prismarine_stairs",
+        "polished_granite_stairs",
+        "smooth_red_sandstone_stairs",
+        "mossy_stone_brick_stairs",
+        "polished_diorite_stairs",
+        "mossy_cobblestone_stairs",
+        "end_stone_brick_stairs",
+        "stone_stairs",
+        "smooth_sandstone_stairs",
+        "smooth_quartz_stairs",
+        "granite_stairs",
+        "andesite_stairs",
+        "red_nether_brick_stairs",
+        "polished_andesite_stairs",
+        "diorite_stairs",
+        "blackstone_stairs",
+        "polished_blackstone_brick_stairs",
+        "polished_blackstone_stairs",
+        "cobbled_deepslate_stairs",
+        "polished_deepslate_stairs",
+        "deepslate_tile_stairs",
+        "deepslate_brick_stairs",
+        "oxidized_cut_copper_stairs",
+        "weathered_cut_copper_stairs",
+        "exposed_cut_copper_stairs",
+        "cut_copper_stairs",
+        "waxed_weathered_cut_copper_stairs",
+        "waxed_exposed_cut_copper_stairs",
+        "waxed_cut_copper_stairs",
+        "waxed_oxidized_cut_copper_stairs"
+      ]
+    },
+    {
+      "name": "standing_signs",
+      "values": [
+        "oak_sign",
+        "spruce_sign",
+        "birch_sign",
+        "acacia_sign",
+        "jungle_sign",
+        "dark_oak_sign",
+        "crimson_sign",
+        "warped_sign"
+      ]
+    },
+    {
+      "name": "stone_bricks",
+      "values": [
+        "stone_bricks",
+        "mossy_stone_bricks",
+        "cracked_stone_bricks",
+        "chiseled_stone_bricks"
+      ]
+    },
+    {
+      "name": "stone_ore_replaceables",
+      "values": [
+        "stone",
+        "granite",
+        "diorite",
+        "andesite"
+      ]
+    },
+    {
+      "name": "stone_pressure_plates",
+      "values": [
+        "stone_pressure_plate",
+        "polished_blackstone_pressure_plate"
+      ]
+    },
+    {
+      "name": "strider_warm_blocks",
+      "values": [
+        "lava"
+      ]
+    },
+    {
+      "name": "tall_flowers",
+      "values": [
+        "sunflower",
+        "lilac",
+        "peony",
+        "rose_bush"
+      ]
+    },
+    {
+      "name": "terracotta",
+      "values": [
+        "terracotta",
+        "white_terracotta",
+        "orange_terracotta",
+        "magenta_terracotta",
+        "light_blue_terracotta",
+        "yellow_terracotta",
+        "lime_terracotta",
+        "pink_terracotta",
+        "gray_terracotta",
+        "light_gray_terracotta",
+        "cyan_terracotta",
+        "purple_terracotta",
+        "blue_terracotta",
+        "brown_terracotta",
+        "green_terracotta",
+        "red_terracotta",
+        "black_terracotta"
+      ]
+    },
+    {
+      "name": "trapdoors",
+      "values": [
+        "#minecraft:wooden_trapdoors",
+        "iron_trapdoor"
+      ]
+    },
+    {
+      "name": "underwater_bonemeals",
+      "values": [
+        "seagrass",
+        "#minecraft:corals",
+        "#minecraft:wall_corals"
+      ]
+    },
+    {
+      "name": "unstable_bottom_center",
+      "values": [
+        "#minecraft:fence_gates"
+      ]
+    },
+    {
+      "name": "valid_spawn",
+      "values": [
+        "grass_block",
+        "podzol"
+      ]
+    },
+    {
+      "name": "wall_corals",
+      "values": [
+        "tube_coral_wall_fan",
+        "brain_coral_wall_fan",
+        "bubble_coral_wall_fan",
+        "fire_coral_wall_fan",
+        "horn_coral_wall_fan"
+      ]
+    },
+    {
+      "name": "wall_post_override",
+      "values": [
+        "torch",
+        "soul_torch",
+        "redstone_torch",
+        "tripwire",
+        "#minecraft:signs",
+        "#minecraft:banners",
+        "#minecraft:pressure_plates"
+      ]
+    },
+    {
+      "name": "wall_signs",
+      "values": [
+        "oak_wall_sign",
+        "spruce_wall_sign",
+        "birch_wall_sign",
+        "acacia_wall_sign",
+        "jungle_wall_sign",
+        "dark_oak_wall_sign",
+        "crimson_wall_sign",
+        "warped_wall_sign"
+      ]
+    },
+    {
+      "name": "walls",
+      "values": [
+        "cobblestone_wall",
+        "mossy_cobblestone_wall",
+        "brick_wall",
+        "prismarine_wall",
+        "red_sandstone_wall",
+        "mossy_stone_brick_wall",
+        "granite_wall",
+        "stone_brick_wall",
+        "nether_brick_wall",
+        "andesite_wall",
+        "red_nether_brick_wall",
+        "sandstone_wall",
+        "end_stone_brick_wall",
+        "diorite_wall",
+        "blackstone_wall",
+        "polished_blackstone_brick_wall",
+        "polished_blackstone_wall",
+        "cobbled_deepslate_wall",
+        "polished_deepslate_wall",
+        "deepslate_tile_wall",
+        "deepslate_brick_wall"
+      ]
+    },
+    {
+      "name": "warped_stems",
+      "values": [
+        "warped_stem",
+        "stripped_warped_stem",
+        "warped_hyphae",
+        "stripped_warped_hyphae"
+      ]
+    },
+    {
+      "name": "wart_blocks",
+      "values": [
+        "nether_wart_block",
+        "warped_wart_block"
+      ]
+    },
+    {
+      "name": "wither_immune",
+      "values": [
+        "barrier",
+        "bedrock",
+        "end_portal",
+        "end_portal_frame",
+        "end_gateway",
+        "command_block",
+        "repeating_command_block",
+        "chain_command_block",
+        "structure_block",
+        "jigsaw",
+        "moving_piston"
+      ]
+    },
+    {
+      "name": "wither_summon_base_blocks",
+      "values": [
+        "soul_sand",
+        "soul_soil"
+      ]
+    },
+    {
+      "name": "wolves_spawnable_on",
+      "values": [
+        "grass_block",
+        "snow",
+        "snow_block"
+      ]
+    },
+    {
+      "name": "wooden_buttons",
+      "values": [
+        "oak_button",
+        "spruce_button",
+        "birch_button",
+        "jungle_button",
+        "acacia_button",
+        "dark_oak_button",
+        "crimson_button",
+        "warped_button"
+      ]
+    },
+    {
+      "name": "wooden_doors",
+      "values": [
+        "oak_door",
+        "spruce_door",
+        "birch_door",
+        "jungle_door",
+        "acacia_door",
+        "dark_oak_door",
+        "crimson_door",
+        "warped_door"
+      ]
+    },
+    {
+      "name": "wooden_fences",
+      "values": [
+        "oak_fence",
+        "acacia_fence",
+        "dark_oak_fence",
+        "spruce_fence",
+        "birch_fence",
+        "jungle_fence",
+        "crimson_fence",
+        "warped_fence"
+      ]
+    },
+    {
+      "name": "wooden_pressure_plates",
+      "values": [
+        "oak_pressure_plate",
+        "spruce_pressure_plate",
+        "birch_pressure_plate",
+        "jungle_pressure_plate",
+        "acacia_pressure_plate",
+        "dark_oak_pressure_plate",
+        "crimson_pressure_plate",
+        "warped_pressure_plate"
+      ]
+    },
+    {
+      "name": "wooden_slabs",
+      "values": [
+        "oak_slab",
+        "spruce_slab",
+        "birch_slab",
+        "jungle_slab",
+        "acacia_slab",
+        "dark_oak_slab",
+        "crimson_slab",
+        "warped_slab"
+      ]
+    },
+    {
+      "name": "wooden_stairs",
+      "values": [
+        "oak_stairs",
+        "spruce_stairs",
+        "birch_stairs",
+        "jungle_stairs",
+        "acacia_stairs",
+        "dark_oak_stairs",
+        "crimson_stairs",
+        "warped_stairs"
+      ]
+    },
+    {
+      "name": "wooden_trapdoors",
+      "values": [
+        "acacia_trapdoor",
+        "birch_trapdoor",
+        "dark_oak_trapdoor",
+        "jungle_trapdoor",
+        "oak_trapdoor",
+        "spruce_trapdoor",
+        "crimson_trapdoor",
+        "warped_trapdoor"
+      ]
+    },
+    {
+      "name": "wool",
+      "values": [
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
+      ]
+    }
+  ],
+  "entity_type": [
+    {
+      "name": "arrows",
+      "values": [
+        "arrow",
+        "spectral_arrow"
+      ]
+    },
+    {
+      "name": "axolotl_always_hostiles",
+      "values": [
+        "drowned",
+        "guardian",
+        "elder_guardian"
+      ]
+    },
+    {
+      "name": "axolotl_hunt_targets",
+      "values": [
+        "tropical_fish",
+        "pufferfish",
+        "salmon",
+        "cod",
+        "squid",
+        "glow_squid"
+      ]
+    },
+    {
+      "name": "beehive_inhabitors",
+      "values": [
+        "bee"
+      ]
+    },
+    {
+      "name": "freeze_hurts_extra_types",
+      "values": [
+        "strider",
+        "blaze",
+        "magma_cube"
+      ]
+    },
+    {
+      "name": "freeze_immune_entity_types",
+      "values": [
+        "stray",
+        "polar_bear",
+        "snow_golem",
+        "wither"
+      ]
+    },
+    {
+      "name": "impact_projectiles",
+      "values": [
+        "#minecraft:arrows",
+        "snowball",
+        "fireball",
+        "small_fireball",
+        "egg",
+        "trident",
+        "dragon_fireball",
+        "wither_skull"
+      ]
+    },
+    {
+      "name": "powder_snow_walkable_mobs",
+      "values": [
+        "rabbit",
+        "endermite",
+        "silverfish",
+        "fox"
+      ]
+    },
+    {
+      "name": "raiders",
+      "values": [
+        "evoker",
+        "pillager",
+        "ravager",
+        "vindicator",
+        "illusioner",
+        "witch"
+      ]
+    },
+    {
+      "name": "skeletons",
+      "values": [
+        "skeleton",
+        "stray",
+        "wither_skeleton"
+      ]
+    }
+  ],
+  "fluid": [
+    {
+      "name": "lava",
+      "values": [
+        "lava",
+        "flowing_lava"
+      ]
+    },
+    {
+      "name": "water",
+      "values": [
+        "water",
+        "flowing_water"
+      ]
+    }
+  ],
+  "game_event": [
+    {
+      "name": "ignore_vibrations_sneaking",
+      "values": [
+        "hit_ground",
+        "projectile_shoot",
+        "step",
+        "swim"
+      ]
+    },
+    {
+      "name": "vibrations",
+      "values": [
+        "block_attach",
+        "block_change",
+        "block_close",
+        "block_destroy",
+        "block_detach",
+        "block_open",
+        "block_place",
+        "block_press",
+        "block_switch",
+        "block_unpress",
+        "block_unswitch",
+        "container_close",
+        "container_open",
+        "dispense_fail",
+        "drinking_finish",
+        "eat",
+        "elytra_free_fall",
+        "entity_damaged",
+        "entity_killed",
+        "entity_place",
+        "equip",
+        "explode",
+        "fishing_rod_cast",
+        "fishing_rod_reel_in",
+        "flap",
+        "fluid_pickup",
+        "fluid_place",
+        "hit_ground",
+        "mob_interact",
+        "lightning_strike",
+        "minecart_moving",
+        "piston_contract",
+        "piston_extend",
+        "prime_fuse",
+        "projectile_land",
+        "projectile_shoot",
+        "ravager_roar",
+        "ring_bell",
+        "shear",
+        "shulker_close",
+        "shulker_open",
+        "splash",
+        "step",
+        "swim",
+        "wolf_shaking"
+      ]
+    }
+  ],
+  "item": [
+    {
+      "name": "acacia_logs",
+      "values": [
+        "acacia_log",
+        "acacia_wood",
+        "stripped_acacia_log",
+        "stripped_acacia_wood"
+      ]
+    },
+    {
+      "name": "anvil",
+      "values": [
+        "anvil",
+        "chipped_anvil",
+        "damaged_anvil"
+      ]
+    },
+    {
+      "name": "arrows",
+      "values": [
+        "arrow",
+        "tipped_arrow",
+        "spectral_arrow"
+      ]
+    },
+    {
+      "name": "axolotl_tempt_items",
+      "values": [
+        "tropical_fish_bucket"
+      ]
+    },
+    {
+      "name": "banners",
+      "values": [
+        "white_banner",
+        "orange_banner",
+        "magenta_banner",
+        "light_blue_banner",
+        "yellow_banner",
+        "lime_banner",
+        "pink_banner",
+        "gray_banner",
+        "light_gray_banner",
+        "cyan_banner",
+        "purple_banner",
+        "blue_banner",
+        "brown_banner",
+        "green_banner",
+        "red_banner",
+        "black_banner"
+      ]
+    },
+    {
+      "name": "beacon_payment_items",
+      "values": [
+        "netherite_ingot",
+        "emerald",
+        "diamond",
+        "gold_ingot",
+        "iron_ingot"
+      ]
+    },
+    {
+      "name": "beds",
+      "values": [
+        "red_bed",
+        "black_bed",
+        "blue_bed",
+        "brown_bed",
+        "cyan_bed",
+        "gray_bed",
+        "green_bed",
+        "light_blue_bed",
+        "light_gray_bed",
+        "lime_bed",
+        "magenta_bed",
+        "orange_bed",
+        "pink_bed",
+        "purple_bed",
+        "white_bed",
+        "yellow_bed"
+      ]
+    },
+    {
+      "name": "birch_logs",
+      "values": [
+        "birch_log",
+        "birch_wood",
+        "stripped_birch_log",
+        "stripped_birch_wood"
+      ]
+    },
+    {
+      "name": "boats",
+      "values": [
+        "oak_boat",
+        "spruce_boat",
+        "birch_boat",
+        "jungle_boat",
+        "acacia_boat",
+        "dark_oak_boat"
+      ]
+    },
+    {
+      "name": "buttons",
+      "values": [
+        "#minecraft:wooden_buttons",
+        "stone_button",
+        "polished_blackstone_button"
+      ]
+    },
+    {
+      "name": "candles",
+      "values": [
+        "candle",
+        "white_candle",
+        "orange_candle",
+        "magenta_candle",
+        "light_blue_candle",
+        "yellow_candle",
+        "lime_candle",
+        "pink_candle",
+        "gray_candle",
+        "light_gray_candle",
+        "cyan_candle",
+        "purple_candle",
+        "blue_candle",
+        "brown_candle",
+        "green_candle",
+        "red_candle",
+        "black_candle"
+      ]
+    },
+    {
+      "name": "carpets",
+      "values": [
+        "white_carpet",
+        "orange_carpet",
+        "magenta_carpet",
+        "light_blue_carpet",
+        "yellow_carpet",
+        "lime_carpet",
+        "pink_carpet",
+        "gray_carpet",
+        "light_gray_carpet",
+        "cyan_carpet",
+        "purple_carpet",
+        "blue_carpet",
+        "brown_carpet",
+        "green_carpet",
+        "red_carpet",
+        "black_carpet"
+      ]
+    },
+    {
+      "name": "cluster_max_harvestables",
+      "values": [
+        "diamond_pickaxe",
+        "golden_pickaxe",
+        "iron_pickaxe",
+        "netherite_pickaxe",
+        "stone_pickaxe",
+        "wooden_pickaxe"
+      ]
+    },
+    {
+      "name": "coal_ores",
+      "values": [
+        "coal_ore",
+        "deepslate_coal_ore"
+      ]
+    },
+    {
+      "name": "coals",
+      "values": [
+        "coal",
+        "charcoal"
+      ]
+    },
+    {
+      "name": "copper_ores",
+      "values": [
+        "copper_ore",
+        "deepslate_copper_ore"
+      ]
+    },
+    {
+      "name": "creeper_drop_music_discs",
+      "values": [
+        "music_disc_13",
+        "music_disc_cat",
+        "music_disc_blocks",
+        "music_disc_chirp",
+        "music_disc_far",
+        "music_disc_mall",
+        "music_disc_mellohi",
+        "music_disc_stal",
+        "music_disc_strad",
+        "music_disc_ward",
+        "music_disc_11",
+        "music_disc_wait"
+      ]
+    },
+    {
+      "name": "crimson_stems",
+      "values": [
+        "crimson_stem",
+        "stripped_crimson_stem",
+        "crimson_hyphae",
+        "stripped_crimson_hyphae"
+      ]
+    },
+    {
+      "name": "dark_oak_logs",
+      "values": [
+        "dark_oak_log",
+        "dark_oak_wood",
+        "stripped_dark_oak_log",
+        "stripped_dark_oak_wood"
+      ]
+    },
+    {
+      "name": "diamond_ores",
+      "values": [
+        "diamond_ore",
+        "deepslate_diamond_ore"
+      ]
+    },
+    {
+      "name": "dirt",
+      "values": [
+        "dirt",
+        "grass_block",
+        "podzol",
+        "coarse_dirt",
+        "mycelium",
+        "rooted_dirt",
+        "moss_block"
+      ]
+    },
+    {
+      "name": "doors",
+      "values": [
+        "#minecraft:wooden_doors",
+        "iron_door"
+      ]
+    },
+    {
+      "name": "emerald_ores",
+      "values": [
+        "emerald_ore",
+        "deepslate_emerald_ore"
+      ]
+    },
+    {
+      "name": "fences",
+      "values": [
+        "#minecraft:wooden_fences",
+        "nether_brick_fence"
+      ]
+    },
+    {
+      "name": "fishes",
+      "values": [
+        "cod",
+        "cooked_cod",
+        "salmon",
+        "cooked_salmon",
+        "pufferfish",
+        "tropical_fish"
+      ]
+    },
+    {
+      "name": "flowers",
+      "values": [
+        "#minecraft:small_flowers",
+        "#minecraft:tall_flowers",
+        "flowering_azalea_leaves",
+        "flowering_azalea"
+      ]
+    },
+    {
+      "name": "fox_food",
+      "values": [
+        "sweet_berries",
+        "glow_berries"
+      ]
+    },
+    {
+      "name": "freeze_immune_wearables",
+      "values": [
+        "leather_boots",
+        "leather_leggings",
+        "leather_chestplate",
+        "leather_helmet",
+        "leather_horse_armor"
+      ]
+    },
+    {
+      "name": "gold_ores",
+      "values": [
+        "gold_ore",
+        "nether_gold_ore",
+        "deepslate_gold_ore"
+      ]
+    },
+    {
+      "name": "ignored_by_piglin_babies",
+      "values": [
+        "leather"
+      ]
+    },
+    {
+      "name": "iron_ores",
+      "values": [
+        "iron_ore",
+        "deepslate_iron_ore"
+      ]
+    },
+    {
+      "name": "jungle_logs",
+      "values": [
+        "jungle_log",
+        "jungle_wood",
+        "stripped_jungle_log",
+        "stripped_jungle_wood"
+      ]
+    },
+    {
+      "name": "lapis_ores",
+      "values": [
+        "lapis_ore",
+        "deepslate_lapis_ore"
+      ]
+    },
+    {
+      "name": "leaves",
+      "values": [
+        "jungle_leaves",
+        "oak_leaves",
+        "spruce_leaves",
+        "dark_oak_leaves",
+        "acacia_leaves",
+        "birch_leaves",
+        "azalea_leaves",
+        "flowering_azalea_leaves"
+      ]
+    },
+    {
+      "name": "lectern_books",
+      "values": [
+        "written_book",
+        "writable_book"
+      ]
+    },
+    {
+      "name": "logs",
+      "values": [
+        "#minecraft:logs_that_burn",
+        "#minecraft:crimson_stems",
+        "#minecraft:warped_stems"
+      ]
+    },
+    {
+      "name": "logs_that_burn",
+      "values": [
+        "#minecraft:dark_oak_logs",
+        "#minecraft:oak_logs",
+        "#minecraft:acacia_logs",
+        "#minecraft:birch_logs",
+        "#minecraft:jungle_logs",
+        "#minecraft:spruce_logs"
+      ]
+    },
+    {
+      "name": "music_discs",
+      "values": [
+        "#minecraft:creeper_drop_music_discs",
+        "music_disc_pigstep",
+        "music_disc_otherside"
+      ]
+    },
+    {
+      "name": "non_flammable_wood",
+      "values": [
+        "warped_stem",
+        "stripped_warped_stem",
+        "warped_hyphae",
+        "stripped_warped_hyphae",
+        "crimson_stem",
+        "stripped_crimson_stem",
+        "crimson_hyphae",
+        "stripped_crimson_hyphae",
+        "crimson_planks",
+        "warped_planks",
+        "crimson_slab",
+        "warped_slab",
+        "crimson_pressure_plate",
+        "warped_pressure_plate",
+        "crimson_fence",
+        "warped_fence",
+        "crimson_trapdoor",
+        "warped_trapdoor",
+        "crimson_fence_gate",
+        "warped_fence_gate",
+        "crimson_stairs",
+        "warped_stairs",
+        "crimson_button",
+        "warped_button",
+        "crimson_door",
+        "warped_door",
+        "crimson_sign",
+        "warped_sign"
+      ]
+    },
+    {
+      "name": "oak_logs",
+      "values": [
+        "oak_log",
+        "oak_wood",
+        "stripped_oak_log",
+        "stripped_oak_wood"
+      ]
+    },
+    {
+      "name": "occludes_vibration_signals",
+      "values": [
+        "#minecraft:wool"
+      ]
+    },
+    {
+      "name": "piglin_food",
+      "values": [
+        "porkchop",
+        "cooked_porkchop"
+      ]
+    },
+    {
+      "name": "piglin_loved",
+      "values": [
+        "#minecraft:gold_ores",
+        "gold_block",
+        "gilded_blackstone",
+        "light_weighted_pressure_plate",
+        "gold_ingot",
+        "bell",
+        "clock",
+        "golden_carrot",
+        "glistering_melon_slice",
+        "golden_apple",
+        "enchanted_golden_apple",
+        "golden_helmet",
+        "golden_chestplate",
+        "golden_leggings",
+        "golden_boots",
+        "golden_horse_armor",
+        "golden_sword",
+        "golden_pickaxe",
+        "golden_shovel",
+        "golden_axe",
+        "golden_hoe",
+        "raw_gold",
+        "raw_gold_block"
+      ]
+    },
+    {
+      "name": "piglin_repellents",
+      "values": [
+        "soul_torch",
+        "soul_lantern",
+        "soul_campfire"
+      ]
+    },
+    {
+      "name": "planks",
+      "values": [
+        "oak_planks",
+        "spruce_planks",
+        "birch_planks",
+        "jungle_planks",
+        "acacia_planks",
+        "dark_oak_planks",
+        "crimson_planks",
+        "warped_planks"
+      ]
+    },
+    {
+      "name": "rails",
+      "values": [
+        "rail",
+        "powered_rail",
+        "detector_rail",
+        "activator_rail"
+      ]
+    },
+    {
+      "name": "redstone_ores",
+      "values": [
+        "redstone_ore",
+        "deepslate_redstone_ore"
+      ]
+    },
+    {
+      "name": "sand",
+      "values": [
+        "sand",
+        "red_sand"
+      ]
+    },
+    {
+      "name": "saplings",
+      "values": [
+        "oak_sapling",
+        "spruce_sapling",
+        "birch_sapling",
+        "jungle_sapling",
+        "acacia_sapling",
+        "dark_oak_sapling",
+        "azalea",
+        "flowering_azalea"
+      ]
+    },
+    {
+      "name": "signs",
+      "values": [
+        "oak_sign",
+        "spruce_sign",
+        "birch_sign",
+        "acacia_sign",
+        "jungle_sign",
+        "dark_oak_sign",
+        "crimson_sign",
+        "warped_sign"
+      ]
+    },
+    {
+      "name": "slabs",
+      "values": [
+        "#minecraft:wooden_slabs",
+        "stone_slab",
+        "smooth_stone_slab",
+        "stone_brick_slab",
+        "sandstone_slab",
+        "purpur_slab",
+        "quartz_slab",
+        "red_sandstone_slab",
+        "brick_slab",
+        "cobblestone_slab",
+        "nether_brick_slab",
+        "petrified_oak_slab",
+        "prismarine_slab",
+        "prismarine_brick_slab",
+        "dark_prismarine_slab",
+        "polished_granite_slab",
+        "smooth_red_sandstone_slab",
+        "mossy_stone_brick_slab",
+        "polished_diorite_slab",
+        "mossy_cobblestone_slab",
+        "end_stone_brick_slab",
+        "smooth_sandstone_slab",
+        "smooth_quartz_slab",
+        "granite_slab",
+        "andesite_slab",
+        "red_nether_brick_slab",
+        "polished_andesite_slab",
+        "diorite_slab",
+        "cut_sandstone_slab",
+        "cut_red_sandstone_slab",
+        "blackstone_slab",
+        "polished_blackstone_brick_slab",
+        "polished_blackstone_slab",
+        "cobbled_deepslate_slab",
+        "polished_deepslate_slab",
+        "deepslate_tile_slab",
+        "deepslate_brick_slab",
+        "waxed_weathered_cut_copper_slab",
+        "waxed_exposed_cut_copper_slab",
+        "waxed_cut_copper_slab",
+        "oxidized_cut_copper_slab",
+        "weathered_cut_copper_slab",
+        "exposed_cut_copper_slab",
+        "cut_copper_slab",
+        "waxed_oxidized_cut_copper_slab"
+      ]
+    },
+    {
+      "name": "small_flowers",
+      "values": [
+        "dandelion",
+        "poppy",
+        "blue_orchid",
+        "allium",
+        "azure_bluet",
+        "red_tulip",
+        "orange_tulip",
+        "white_tulip",
+        "pink_tulip",
+        "oxeye_daisy",
+        "cornflower",
+        "lily_of_the_valley",
+        "wither_rose"
+      ]
+    },
+    {
+      "name": "soul_fire_base_blocks",
+      "values": [
+        "soul_sand",
+        "soul_soil"
+      ]
+    },
+    {
+      "name": "spruce_logs",
+      "values": [
+        "spruce_log",
+        "spruce_wood",
+        "stripped_spruce_log",
+        "stripped_spruce_wood"
+      ]
+    },
+    {
+      "name": "stairs",
+      "values": [
+        "#minecraft:wooden_stairs",
+        "cobblestone_stairs",
+        "sandstone_stairs",
+        "nether_brick_stairs",
+        "stone_brick_stairs",
+        "brick_stairs",
+        "purpur_stairs",
+        "quartz_stairs",
+        "red_sandstone_stairs",
+        "prismarine_brick_stairs",
+        "prismarine_stairs",
+        "dark_prismarine_stairs",
+        "polished_granite_stairs",
+        "smooth_red_sandstone_stairs",
+        "mossy_stone_brick_stairs",
+        "polished_diorite_stairs",
+        "mossy_cobblestone_stairs",
+        "end_stone_brick_stairs",
+        "stone_stairs",
+        "smooth_sandstone_stairs",
+        "smooth_quartz_stairs",
+        "granite_stairs",
+        "andesite_stairs",
+        "red_nether_brick_stairs",
+        "polished_andesite_stairs",
+        "diorite_stairs",
+        "blackstone_stairs",
+        "polished_blackstone_brick_stairs",
+        "polished_blackstone_stairs",
+        "cobbled_deepslate_stairs",
+        "polished_deepslate_stairs",
+        "deepslate_tile_stairs",
+        "deepslate_brick_stairs",
+        "oxidized_cut_copper_stairs",
+        "weathered_cut_copper_stairs",
+        "exposed_cut_copper_stairs",
+        "cut_copper_stairs",
+        "waxed_weathered_cut_copper_stairs",
+        "waxed_exposed_cut_copper_stairs",
+        "waxed_cut_copper_stairs",
+        "waxed_oxidized_cut_copper_stairs"
+      ]
+    },
+    {
+      "name": "stone_bricks",
+      "values": [
+        "stone_bricks",
+        "mossy_stone_bricks",
+        "cracked_stone_bricks",
+        "chiseled_stone_bricks"
+      ]
+    },
+    {
+      "name": "stone_crafting_materials",
+      "values": [
+        "cobblestone",
+        "blackstone",
+        "cobbled_deepslate"
+      ]
+    },
+    {
+      "name": "stone_tool_materials",
+      "values": [
+        "cobblestone",
+        "blackstone",
+        "cobbled_deepslate"
+      ]
+    },
+    {
+      "name": "tall_flowers",
+      "values": [
+        "sunflower",
+        "lilac",
+        "peony",
+        "rose_bush"
+      ]
+    },
+    {
+      "name": "terracotta",
+      "values": [
+        "terracotta",
+        "white_terracotta",
+        "orange_terracotta",
+        "magenta_terracotta",
+        "light_blue_terracotta",
+        "yellow_terracotta",
+        "lime_terracotta",
+        "pink_terracotta",
+        "gray_terracotta",
+        "light_gray_terracotta",
+        "cyan_terracotta",
+        "purple_terracotta",
+        "blue_terracotta",
+        "brown_terracotta",
+        "green_terracotta",
+        "red_terracotta",
+        "black_terracotta"
+      ]
+    },
+    {
+      "name": "trapdoors",
+      "values": [
+        "#minecraft:wooden_trapdoors",
+        "iron_trapdoor"
+      ]
+    },
+    {
+      "name": "walls",
+      "values": [
+        "cobblestone_wall",
+        "mossy_cobblestone_wall",
+        "brick_wall",
+        "prismarine_wall",
+        "red_sandstone_wall",
+        "mossy_stone_brick_wall",
+        "granite_wall",
+        "stone_brick_wall",
+        "nether_brick_wall",
+        "andesite_wall",
+        "red_nether_brick_wall",
+        "sandstone_wall",
+        "end_stone_brick_wall",
+        "diorite_wall",
+        "blackstone_wall",
+        "polished_blackstone_brick_wall",
+        "polished_blackstone_wall",
+        "cobbled_deepslate_wall",
+        "polished_deepslate_wall",
+        "deepslate_tile_wall",
+        "deepslate_brick_wall"
+      ]
+    },
+    {
+      "name": "warped_stems",
+      "values": [
+        "warped_stem",
+        "stripped_warped_stem",
+        "warped_hyphae",
+        "stripped_warped_hyphae"
+      ]
+    },
+    {
+      "name": "wooden_buttons",
+      "values": [
+        "oak_button",
+        "spruce_button",
+        "birch_button",
+        "jungle_button",
+        "acacia_button",
+        "dark_oak_button",
+        "crimson_button",
+        "warped_button"
+      ]
+    },
+    {
+      "name": "wooden_doors",
+      "values": [
+        "oak_door",
+        "spruce_door",
+        "birch_door",
+        "jungle_door",
+        "acacia_door",
+        "dark_oak_door",
+        "crimson_door",
+        "warped_door"
+      ]
+    },
+    {
+      "name": "wooden_fences",
+      "values": [
+        "oak_fence",
+        "acacia_fence",
+        "dark_oak_fence",
+        "spruce_fence",
+        "birch_fence",
+        "jungle_fence",
+        "crimson_fence",
+        "warped_fence"
+      ]
+    },
+    {
+      "name": "wooden_pressure_plates",
+      "values": [
+        "oak_pressure_plate",
+        "spruce_pressure_plate",
+        "birch_pressure_plate",
+        "jungle_pressure_plate",
+        "acacia_pressure_plate",
+        "dark_oak_pressure_plate",
+        "crimson_pressure_plate",
+        "warped_pressure_plate"
+      ]
+    },
+    {
+      "name": "wooden_slabs",
+      "values": [
+        "oak_slab",
+        "spruce_slab",
+        "birch_slab",
+        "jungle_slab",
+        "acacia_slab",
+        "dark_oak_slab",
+        "crimson_slab",
+        "warped_slab"
+      ]
+    },
+    {
+      "name": "wooden_stairs",
+      "values": [
+        "oak_stairs",
+        "spruce_stairs",
+        "birch_stairs",
+        "jungle_stairs",
+        "acacia_stairs",
+        "dark_oak_stairs",
+        "crimson_stairs",
+        "warped_stairs"
+      ]
+    },
+    {
+      "name": "wooden_trapdoors",
+      "values": [
+        "acacia_trapdoor",
+        "birch_trapdoor",
+        "dark_oak_trapdoor",
+        "jungle_trapdoor",
+        "oak_trapdoor",
+        "spruce_trapdoor",
+        "crimson_trapdoor",
+        "warped_trapdoor"
+      ]
+    },
+    {
+      "name": "wool",
+      "values": [
+        "white_wool",
+        "orange_wool",
+        "magenta_wool",
+        "light_blue_wool",
+        "yellow_wool",
+        "lime_wool",
+        "pink_wool",
+        "gray_wool",
+        "light_gray_wool",
+        "cyan_wool",
+        "purple_wool",
+        "blue_wool",
+        "brown_wool",
+        "green_wool",
+        "red_wool",
+        "black_wool"
+      ]
+    }
+  ]
+}

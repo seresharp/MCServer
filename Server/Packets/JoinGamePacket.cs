@@ -20,9 +20,9 @@ public class JoinGamePacket : ServerPacket
         // TODO
         AddInt32(56);
         AddBool(false);
-        AddByte(0);
+        AddByte(1);
         AddSByte(-1);
-        AddVarInt(_server.Dimensions.Count());
+        AddVarInt(_server.Dimensions.Count);
         foreach (Dimension dim in _server.Dimensions)
         {
             AddString(dim.Name);

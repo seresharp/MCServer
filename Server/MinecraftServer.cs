@@ -36,19 +36,19 @@ public class MinecraftServer : IDisposable
     public MinecraftServer()
     {
         Items = new("./Resources/items.json");
-        Log($"Loaded {Items.Count()} items");
+        Log($"Loaded {Items.Count} items");
 
         Blocks = new("./Resources/blocks.json");
-        Log($"Loaded {Blocks.Count()} blocks");
+        Log($"Loaded {Blocks.Count} blocks");
 
         Entities = new("./Resources/entities.json");
-        Log($"Loaded {Entities.Count()} entities");
+        Log($"Loaded {Entities.Count} entities");
 
         Dimensions = new("./Resources/dimensions.json");
-        Log($"Loaded {Dimensions.Count()} dimensions");
+        Log($"Loaded {Dimensions.Count} dimensions");
 
         Biomes = new("./Resources/biomes.json");
-        Log($"Loaded {Biomes.Count()} biomes");
+        Log($"Loaded {Biomes.Count} biomes");
 
         Tags = new("./Resources/tags.json");
         Log($"Loaded {Tags.Types.Select(t => Tags[t].Count()).Sum()} tags");
@@ -110,7 +110,15 @@ public class MinecraftServer : IDisposable
                 client.QueuePacket(new DeclareRecipesPacket());
                 client.QueuePacket(new UnlockRecipesPacket());
                 client.QueuePacket(new PlayerInfoPacket());
-                client.QueuePacket(new ChunkDataPacket());
+                
+                for (int x = -3; x <= 3; x++)
+                {
+                    for (int z = -3; z <= 3; z++)
+                    {
+                        client.QueuePacket(new ChunkDataPacket(x, z));
+                    }
+                }
+
                 client.QueuePacket(new SpawnPositionPacket());
                 client.QueuePacket(new PlayerPositionAndLookPacket());
                 client.QueuePacket(new TimeUpdatePacket());

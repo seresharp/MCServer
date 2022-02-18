@@ -1,4 +1,5 @@
 ﻿using System.Collections.Concurrent;
+using System.Net;
 using System.Net.Sockets;
 using MCServer.Client.Packets;
 using Newtonsoft.Json;
@@ -18,12 +19,13 @@ public class MinecraftClient : IDisposable
 
     private readonly ConcurrentQueue<Server.Packets.ServerPacket> PacketQueue = new();
 
-    public int State { get; set; } = 0;
+    public int State { get; set; }
 
     public MinecraftClient(TcpClient tcpClient)
     {
         Tcp = tcpClient;
         Stream = Tcp.GetStream();
+        Server.MinecraftServer.Log("New connection from " + ((IPEndPoint)(tcpClient.Client.RemoteEndPoint)).Address);
     }
 
     public void StartReadWrite()

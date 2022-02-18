@@ -11,6 +11,8 @@ public class GenericLoader<T> : IEnumerable<T> where T : IMinecraftObject
     private readonly Dictionary<int, T> _idLookup;
     private readonly Dictionary<string, T> _nameLookup;
 
+    public int Count => _items.Length;
+
     public GenericLoader(string jsonPath)
     {
         _items = JsonConvert.DeserializeObject<T[]>(File.ReadAllText(jsonPath))

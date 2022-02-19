@@ -22,6 +22,7 @@ namespace MCServer.World
         {
             List<byte> data = new();
 
+            // TODO: indirect palette
             short nonAir = (short)_blocks.OfType<BlockState>().Count(b => b.BlockId != 0);
             data.AddRange(nonAir.GetBytes(true));
             if (nonAir == 0)
@@ -48,11 +49,11 @@ namespace MCServer.World
                 CompactLongArray ids = new(15, 16 * 16 * 16);
 
                 int i = 0;
-                for (int x = 0; x < 16; x++)
+                for (int y = 0; y < 16; y++)
                 {
-                    for (int y = 0; y < 16; y++)
+                    for (int z = 0; z < 16; z++)
                     {
-                        for (int z = 0; z < 16; z++)
+                        for (int x = 0; x < 16; x++)
                         {
                             ids[i++] = _blocks[x, y, z].StateId;
                         }
@@ -83,8 +84,6 @@ namespace MCServer.World
             {
                 data.AddRange(l.GetBytes(true));
             }
-
-            Console.WriteLine(BitConverter.ToString(biomeLongs.First().GetBytes(false)));
 
             return data.ToArray();
         }

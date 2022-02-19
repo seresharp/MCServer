@@ -47,10 +47,23 @@ namespace MCServer.World
             _sections[y / 16].SetBlock(x, y % 16, z, state);
         }
 
+        public int GetHeight(int x, int z)
+        {
+            int highest = 0;
+            for (int y = 0; y < Height; y++)
+            {
+                if (this[x, y, z].BlockId != 0)
+                {
+                    highest = y;
+                }
+            }
+
+            return highest;
+        }
+
         public byte[] Serialize()
         {
             List<byte> data = new();
-            data.AddRange(_sections.Length.ToVarInt());
             foreach (ChunkSection section in _sections)
             {
                 data.AddRange(section.Serialize());

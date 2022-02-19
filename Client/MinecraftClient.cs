@@ -51,13 +51,17 @@ public class MinecraftClient : IDisposable
     public void QueuePacket(Server.Packets.ServerPacket packet)
     {
         PacketQueue.Enqueue(packet);
+
+        using StringWriter sw = new();
+        JsonSerializer.CreateDefault().Serialize(sw, packet);
+        Server.MinecraftServer.Log($"Enqueued {packet.GetType().Name}: {sw}");
     }
 
     public void PrintError()
     {
         if (_readWriteTask?.Exception != null)
         {
-            Console.WriteLine(_readWriteTask.Exception);
+            Server.MinecraftServer.Log(_readWriteTask.Exception);
         }
     }
 
@@ -65,26 +69,19 @@ public class MinecraftClient : IDisposable
     {
         try
         {
-            Task<int>? readTask = null;
-            Task? writeTask = null;
             CancellationTokenSource source = new();
+            Task readTask = Read(source);
+            Task writeTask = Write(source.Token);
             while (true)
             {
-                if (readTask?.IsCompleted is null or true)
+                if (readTask.IsCompleted)
                 {
-                    readTask = Stream.ReadAsync(Buffer.AsMemory(_bufferPos), source.Token).AsTask();
+                    readTask = Read(source);
                 }
 
-                if (writeTask?.IsCompleted is null or true)
+                if (writeTask.IsCompleted)
                 {
-                    if (PacketQueue.TryDequeue(out Server.Packets.ServerPacket? packet) && packet != null)
-                    {
-                        writeTask = Stream.WriteAsync(packet.Build(), source.Token).AsTask();
-                    }
-                    else
-                    {
-                        writeTask = Task.Delay(50);
-                    }
+                    writeTask = Write(source.Token);
                 }
 
                 Task t = await Task.WhenAny(readTask, writeTask);
@@ -94,21 +91,9 @@ public class MinecraftClient : IDisposable
                     throw t.Exception;
                 }
 
-                if (t == readTask)
+                if (source.IsCancellationRequested)
                 {
-                    int dataRead = readTask.Result;
-                    if (dataRead == 0)
-                    {
-                        source.Cancel();
-                        break;
-                    }
-
-                    _bufferPos += dataRead;
-                    while (ParsePacket()) ;
-                }
-                else
-                {
-                    // packet write. I don't think this requires any handling, maybe wrong?
+                    break;
                 }
             }
         }
@@ -121,6 +106,41 @@ public class MinecraftClient : IDisposable
             catch (Exception e)
             {
                 Server.MinecraftServer.Log("Error in disconnect handler:\n" + e);
+            }
+        }
+
+        async Task Read(CancellationTokenSource source)
+        {
+            int dataRead = await Stream.ReadAsync(Buffer.AsMemory(_bufferPos), source.Token);
+            if (dataRead == 0)
+            {
+                source.Cancel();
+            }
+
+            if (source.Token.IsCancellationRequested)
+            {
+                return;
+            }
+
+            _bufferPos += dataRead;
+            while (true)
+            {
+                if (!ParsePacket())
+                {
+                    break;
+                }
+            }
+        }
+
+        async Task Write(CancellationToken token)
+        {
+            if (PacketQueue.TryDequeue(out Server.Packets.ServerPacket? packet) && packet != null)
+            {
+                await Stream.WriteAsync(packet.Build(), token);
+            }
+            else
+            {
+                await Task.Delay(50, token);
             }
         }
     }
@@ -158,9 +178,9 @@ public class MinecraftClient : IDisposable
 
         if (ClientPacket.TryParse(Buffer[0..len], State, out ClientPacket? packet, out string error))
         {
-            Console.Write("Received " + packet.GetType().Name + ": ");
-            JsonSerializer.CreateDefault().Serialize(Console.Out, packet);
-            Console.WriteLine();
+            using StringWriter sw = new();
+            JsonSerializer.CreateDefault().Serialize(sw, packet);
+            Server.MinecraftServer.Log($"Received {packet.GetType().Name}: {sw}");
 
             // don't kill the client if the server throws on handling a packet
             try
@@ -174,7 +194,7 @@ public class MinecraftClient : IDisposable
         }
         else
         {
-            Console.WriteLine(error);
+            Server.MinecraftServer.Log(error);
         }
 
         // shift packet left out of the buffer

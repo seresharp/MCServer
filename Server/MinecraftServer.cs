@@ -98,6 +98,7 @@ public class MinecraftServer : IDisposable
                 client.QueuePacket(resp);
                 break;
             case LoginStartPacket loginStart:
+                // TODO: authentication and encryption
                 resp = new LoginSuccessPacket($"OfflinePlayer:{loginStart.Username}", loginStart.Username);
                 client.QueuePacket(resp);
 
@@ -110,12 +111,25 @@ public class MinecraftServer : IDisposable
                 client.QueuePacket(new DeclareRecipesPacket());
                 client.QueuePacket(new UnlockRecipesPacket());
                 client.QueuePacket(new PlayerInfoPacket());
-                
-                for (int x = -3; x <= 3; x++)
+
+                for (int chunkX = -4; chunkX <= 4; chunkX++)
                 {
-                    for (int z = -3; z <= 3; z++)
+                    for (int chunkZ = -4; chunkZ <= 4; chunkZ++)
                     {
-                        client.QueuePacket(new ChunkDataPacket(x, z));
+                        World.ChunkColumn chunk = new(384, chunkX, chunkZ);
+
+                        if (chunkX == 0 && chunkZ == 0)
+                        {
+                            for (int x = 0; x < 16; x++)
+                            {
+                                for (int z = 0; z < 16; z++)
+                                {
+                                    chunk[x, 0, z] = new World.BlockState(x == z || (15 - x) == z ? Blocks["red_wool"] : Blocks["green_wool"]);
+                                }
+                            }
+                        }
+
+                        client.QueuePacket(new ChunkDataPacket(chunk));
                     }
                 }
 

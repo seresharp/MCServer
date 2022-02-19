@@ -10,49 +10,44 @@ namespace MCServer.Server.Packets;
 
 public class ChunkDataPacket : ServerPacket
 {
-    public int X { get; init; }
+    public ChunkColumn Chunk { get; init; }
 
-    public int Z { get; init; }
-
-    public ChunkDataPacket(int x, int z)
+    public ChunkDataPacket(ChunkColumn chunk)
     {
         Id = 0x22;
 
-        X = x;
-        Z = z;
+        Chunk = chunk;
     }
 
     public override byte[] Build()
     {
-        AddInt32(X);
-        AddInt32(Z);
+        AddInt32(Chunk.X);
+        AddInt32(Chunk.Z);
 
         Util.CompactLongArray motionBlocking = new(9, 256);
-        for (int i = 0; i < motionBlocking.Length; i++)
+        int i = 0;
+        for (int z = 0; z < 16; z++)
         {
-            motionBlocking[i] = 15;
+            for (int x = 0; x < 16; x++)
+            {
+                motionBlocking[i++] = Chunk.GetHeight(x, z);
+            }
         }
 
         CompoundTag heightMap = new();
         heightMap.AddChild("MOTION_BLOCKING", new LongArrayTag(motionBlocking.Longs.ToArray()));
         AddBytes(heightMap.GetBytes(true));
 
-        ChunkColumn chunk = new(384, 0, 0);
-        for (int x = 0; x < 16; x++)
-        {
-            for (int y = 0; y < 16; y++)
-            {
-                for (int z = 0; z < 16; z++)
-                {
-                    chunk[x, y, z] = new BlockState { BlockId = 8, StateId = 9 };
-                }
-            }
-        }
+        AddBytes(Chunk.Serialize());
 
-        AddBytes(chunk.Serialize());
-
+        // block entity count
         AddVarInt(0);
+
+        // trust edges for light updates
+        // not sure what that even means
         AddBool(true);
+
+        // TODO: lighting info
         AddVarInt(0);
         AddVarInt(0);
         AddVarInt(0);

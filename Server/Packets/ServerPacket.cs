@@ -81,8 +81,6 @@ public abstract class ServerPacket
         data.InsertRange(0, Id.ToVarInt());
         data.InsertRange(0, data.Count.ToVarInt());
 
-        Console.WriteLine("built packet of size " + data.Count);
-
         return data.ToArray();
     }
 }

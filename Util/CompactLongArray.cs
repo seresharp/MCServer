@@ -48,18 +48,16 @@ namespace MCServer.Util
             {
                 int arrayIndex = index / EntriesPerLong;
                 int offset = (index % EntriesPerLong) * BitsPerEntry;
-                int shift = 64 - (BitsPerEntry * EntriesPerLong) + offset;
 
-                return (int)((_longs[arrayIndex] >> shift) & ((1L << BitsPerEntry) - 1));
+                return (int)((_longs[arrayIndex] >> offset) & ((1L << BitsPerEntry) - 1));
             }
             set
             {
                 CheckValid(value);
                 int arrayIndex = index / EntriesPerLong;
                 int offset = (index % EntriesPerLong) * BitsPerEntry;
-                int shift = 64 - (BitsPerEntry * EntriesPerLong) + offset;
 
-                _longs[arrayIndex] |= (long)value << shift;
+                _longs[arrayIndex] |= (long)value << offset;
             }
         }
     }

@@ -19,13 +19,15 @@ public class MinecraftClient : IDisposable
 
     private readonly ConcurrentQueue<Server.Packets.ServerPacket> PacketQueue = new();
 
-    public int State { get; set; }
+    public ClientState State { get; set; }
+
+    public Player Player { get; init; } = new();
 
     public MinecraftClient(TcpClient tcpClient)
     {
         Tcp = tcpClient;
         Stream = Tcp.GetStream();
-        Server.MinecraftServer.Log("New connection from " + ((IPEndPoint)(tcpClient.Client.RemoteEndPoint)).Address);
+        Server.MinecraftServer.Log("New connection from " + (tcpClient.Client.RemoteEndPoint as IPEndPoint)?.Address);
     }
 
     public void StartReadWrite()
@@ -72,7 +74,7 @@ public class MinecraftClient : IDisposable
             CancellationTokenSource source = new();
             Task readTask = Read(source);
             Task writeTask = Write(source.Token);
-            while (true)
+            while (!source.IsCancellationRequested)
             {
                 if (readTask.IsCompleted)
                 {
@@ -89,11 +91,6 @@ public class MinecraftClient : IDisposable
                 {
                     source.Cancel();
                     throw t.Exception;
-                }
-
-                if (source.IsCancellationRequested)
-                {
-                    break;
                 }
             }
         }
@@ -219,4 +216,12 @@ public class MinecraftClient : IDisposable
     // TODO: create bodies for these with try/catch
     public event Action<MinecraftClient>? Disconnect;
     public event Action<MinecraftClient, ClientPacket>? PacketReceived;
+}
+
+public enum ClientState
+{
+    Default,
+    Status,
+    Login,
+    Play
 }

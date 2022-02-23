@@ -2,16 +2,18 @@
 
 public class HandshakePacket : ClientPacket
 {
-    public int ProtocolVersion { get; init; }
+    public int ProtocolVersion { get; private set; }
 
-    public string Address { get; init; }
+    public string Address { get; private set; } = null!;
 
-    public ushort Port { get; init; }
+    public ushort Port { get; private set; }
 
-    public int NextState { get; init; }
+    public int NextState { get; private set; }
 
-    public HandshakePacket(byte[] data)
+    public override void ReadData(int id, byte[] data)
     {
+        Id = id;
+
         int pos = 0;
         ProtocolVersion = ReadVarInt(data, ref pos);
         Address = ReadString(data, ref pos);

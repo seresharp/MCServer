@@ -2,11 +2,9 @@
 
 public class PingPacket : ClientPacket
 {
-    public int Id { get; init; }
+    public long Payload { get; private set; }
 
-    public long Payload { get; init; }
-
-    public PingPacket(int id, byte[] data)
+    public override void ReadData(int id, byte[] data)
     {
         Id = id;
 

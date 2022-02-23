@@ -5,10 +5,24 @@ namespace MCServer.Client.Packets;
 
 public abstract class ClientPacket
 {
-    public static int GetPacketLength(byte[] buffer, int pos)
-        => ReadVarInt(buffer, ref pos) + pos;
+    private static readonly IPacketReader[] _Readers;
 
-    public static bool TryParse(byte[] buffer, int clientState, [NotNullWhen(true)] out ClientPacket? packet, out string error)
+    static ClientPacket()
+    {
+        _Readers = new IPacketReader[]
+        {
+            new PacketReader<HandshakePacket>(0x00, ClientState.Default),
+            new PacketReader<StatusRequestPacket>(0x00, ClientState.Status),
+            new PacketReader<LoginStartPacket>(0x00, ClientState.Login),
+            new PacketReader<PingPacket>(0x01, ClientState.Status),
+            new PacketReader<PingPacket>(0x0F, ClientState.Play),
+            new PacketReader<PlayerPositionAndLookPacket>(0x11, ClientState.Play),
+            new PacketReader<PlayerPositionAndLookPacket>(0x12, ClientState.Play),
+            new PacketReader<PlayerPositionAndLookPacket>(0x13, ClientState.Play)
+        };
+    }
+
+    public static bool TryParse(byte[] buffer, ClientState clientState, [NotNullWhen(true)] out ClientPacket? packet, out string error)
     {
         try
         {
@@ -22,30 +36,19 @@ public abstract class ClientPacket
 
             byte[] data = buffer[pos..(pos + length)];
 
-            switch ((PacketType)id)
+            foreach (IPacketReader reader in _Readers)
             {
-                case PacketType.Handshake when clientState == 0:
-                    packet = new HandshakePacket(data);
-                    break;
-                case PacketType.Handshake when clientState == 1:
-                    packet = new StatusRequestPacket();
-                    break;
-                case PacketType.Handshake when clientState == 2:
-                    packet = new LoginStartPacket(data);
-                    break;
-                case PacketType.Ping when clientState == 1:
-                case PacketType.KeepAlive when clientState == 3:
-                    packet = new PingPacket(id, data);
-                    break;
-                default:
-                    packet = null;
-                    error = "Invalid/unimplemented packet: " + id.ToString("X") + ", state:" + clientState;
-                    error += "\n" + BitConverter.ToString(buffer).Replace('-', ' ');
-                    return false;
+                if (reader.TryReadPacket(id, clientState, data, out packet))
+                {
+                    error = string.Empty;
+                    return true;
+                }
             }
 
-            error = string.Empty;
-            return true;
+            packet = null;
+            error = "Invalid/unimplemented packet: " + id.ToString("X") + ", state:" + clientState;
+            error += "\n" + BitConverter.ToString(buffer).Replace('-', ' ');
+            return false;
         }
         catch (Exception e)
         {
@@ -54,6 +57,13 @@ public abstract class ClientPacket
             return false;
         }
     }
+
+    public int Id { get; protected set; }
+
+    public abstract void ReadData(int id, byte[] data);
+
+    public static int GetPacketLength(byte[] buffer, int pos)
+        => ReadVarInt(buffer, ref pos) + pos;
 
     protected static int ReadVarInt(byte[] buffer, ref int pos)
     {
@@ -107,6 +117,27 @@ public abstract class ClientPacket
         return BitConverter.ToInt64(bytes, 0);
     }
 
+    protected static float ReadFloat(byte[] buffer, ref int pos)
+    {
+        byte[] bytes = buffer[pos..(pos + 4)];
+        FixEndianness(bytes);
+
+        pos += 4;
+        return BitConverter.ToSingle(bytes, 0);
+    }
+
+    protected static double ReadDouble(byte[] buffer, ref int pos)
+    {
+        byte[] bytes = buffer[pos..(pos + 8)];
+        FixEndianness(bytes);
+
+        pos += 8;
+        return BitConverter.ToDouble(bytes, 0);
+    }
+
+    protected static bool ReadBool(byte[] buffer, ref int pos)
+        => buffer[pos++] != 0x00;
+
     private static void FixEndianness(byte[] bytes)
     {
         if (!BitConverter.IsLittleEndian)
@@ -116,11 +147,4 @@ public abstract class ClientPacket
 
         Array.Reverse(bytes);
     }
-}
-
-public enum PacketType
-{
-    Handshake = 0x00,
-    Ping = 0x01,
-    KeepAlive = 0x0F
 }

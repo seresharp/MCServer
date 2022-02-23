@@ -62,6 +62,9 @@ public class MinecraftServer : IDisposable
 
         Log("Listening for client connections...");
 
+        // this is extremely not how you're supposed to use tasks, change at some point
+        Task keepAlive = Task.Run(SendKeepAlivePackets);
+
         while (true)
         {
             MinecraftClient newClient = new(await _server.AcceptTcpClientAsync());
@@ -80,6 +83,22 @@ public class MinecraftServer : IDisposable
     public static void Log(object obj)
         => Console.WriteLine(obj);
 
+    private async Task SendKeepAlivePackets()
+    {
+        while (true)
+        {
+            await Task.Delay(5000);
+            lock (_clients)
+            {
+                foreach (MinecraftClient client in _clients
+                    .Where(c => c.State == ClientState.Play))
+                {
+                    client.QueuePacket(new PongPacket(0x21, Environment.TickCount64));
+                }
+            }
+        }
+    }
+
     private void HandlePacket(MinecraftClient client, ClientPacket packet)
     {
         ServerPacket resp;
@@ -87,22 +106,25 @@ public class MinecraftServer : IDisposable
         switch (packet)
         {
             case HandshakePacket handshake:
-                client.State = handshake.NextState;
+                client.State = (ClientState)handshake.NextState;
                 break;
             case StatusRequestPacket:
                 resp = new StatusResponsePacket(GAME_VERSION, PROTOCOL_VERSION, Description, MaxPlayers);
                 client.QueuePacket(resp);
                 break;
-            case PingPacket ping:
+            case PingPacket ping when client.State != ClientState.Play:
                 resp = new PongPacket(ping.Id, ping.Payload);
                 client.QueuePacket(resp);
+                break;
+            case PingPacket keepAlive when client.State == ClientState.Play:
+                // TODO: validate payload
                 break;
             case LoginStartPacket loginStart:
                 // TODO: authentication and encryption
                 resp = new LoginSuccessPacket($"OfflinePlayer:{loginStart.Username}", loginStart.Username);
                 client.QueuePacket(resp);
 
-                client.State = 3;
+                client.State = ClientState.Play;
 
                 client.QueuePacket(new JoinGamePacket(this));
                 client.QueuePacket(new PluginMessagePacket("minecraft:brand", "chad_serena_mc".GetBytes(true)));
@@ -134,10 +156,13 @@ public class MinecraftServer : IDisposable
                 }
 
                 client.QueuePacket(new SpawnPositionPacket());
-                client.QueuePacket(new PlayerPositionAndLookPacket());
+                client.QueuePacket(new Packets.PlayerPositionAndLookPacket());
                 client.QueuePacket(new TimeUpdatePacket());
                 client.QueuePacket(new ChangeGameStatePacket());
                 client.QueuePacket(new WindowItemsPacket());
+                break;
+            case Client.Packets.PlayerPositionAndLookPacket pos:
+                client.Player.UpdatePosition(pos);
                 break;
             default:
                 throw new NotImplementedException(packet.GetType().FullName);
